@@ -1,0 +1,17 @@
+<div class="main posts-index">
+  <div class="container">
+    <% @pages.each do |page| %>
+    <div class="posts-index-item">
+      <div class="post-left">
+        <img src="<%= "/user_images/#{page.user.image_name}" %>">
+      </div>
+      <div class="post-right">
+        <div class="post-user-name">
+        <%= link_to(page.user.name, "/users/#{page.user.id}") %>
+        </div>
+        <%= link_to(page.title,"/pages/#{page.id}") %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
