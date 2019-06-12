@@ -57,5 +57,4 @@ class PagesController < ApplicationController
      redirect_to("/pages/index")
     end
   end
-
 end
